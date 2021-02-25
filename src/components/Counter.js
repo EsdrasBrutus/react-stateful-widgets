@@ -64,7 +64,7 @@ export default function Counter() {
   const style = {
     fontSize: '1.5em',
     marginBottom: '0.3em',
-    color: null,
+    color: (count % 2 == 0) ? "royalblue" : 'crimson',
   };
   
   
