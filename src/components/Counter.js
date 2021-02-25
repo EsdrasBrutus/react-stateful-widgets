@@ -67,7 +67,6 @@ export default function Counter() {
     color: null,
   };
   
-  let EVOD = (count % 2 == 0) ? "even" : "odd"
   
   if (count % 2 == 0){
     style.color = 'royalblue'
@@ -85,7 +84,7 @@ export default function Counter() {
     <div className='widget-counter container'>
       <h2>Counter</h2>
       <div id='count' style={style}>
-        Number {count} is {EVOD}
+        Number {count} is {(count % 2 == 0) ? "even" : "odd"}
       </div>
       <div>
         <button id='increment' onClick={increment}>Increment</button>
